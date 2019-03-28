@@ -1,54 +1,41 @@
-  <head>
-    <title>AgeInPlace123</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
- 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<nav class="navbar-expand-lg navbar-light bg-light">
 
-<body>
+<header>
+    <div class="navbar-logo">
+      <%= link_to image_tag("ageinplace123.png", :size => "100x100", :role => "logo") %>
+    </div>
 
-  <nav class="navbar navbar-static-top navbar-default" role="navigation">
-    <div class="container">
-    
-      <div class="navbar-header">
-        <button-type="button" class="navbar-toggle" data-toggle="collapse" data-target="main-nav-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div> <!-- navbar-header collapse -->
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+  <span class="sr-only">Toggle navigation</span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  </button>
+</div>
 
-    </div> <!-- Container collapse -->
+<div class="collapse.navbar-collapse id=navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li>
+        <%= link_to("Home", "/home") %>
+      </li>
+      <li>
+        <%= link_to("About", "/about") %>
+      </li>
+      <li>
+        <%= link_to("Services", "/services") %>
+      </li>
+    </ul>
+</div>
 
-    <div class="collapse navbar-collapse" id="main-nav-collapse">
-      <ul class="nav navbar-nav navbar-left">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-      </ul>
-
-      <%= image_tag("logo.png", :size => "100x100", :role => "logo") %>
-      <div class="nav-title">Find the Resources You Need</div>
-
-      <form class="form-inline my-2 my-lg-0"> <!-- Search Bar -->
-        <input class="form-control mr-sm-2" type="search" placeholder="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div> <!-- Main Nav Collapse collapse -->
-
-    <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Sign Up</a></li>
-        <li><a href="#">Login</a></li>
-      </ul>
-      
-  </nav> <!-- Navbar collapse -->
-
-
+    <div class="top-main">
+      <div class="top-message">
+        <p>Grow Where You're Planted</p>
+            <form class="form-inline my-2 justify-content-center"> <!-- Search Bar -->
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+      </div>
+    </div>
+    </header>
 </nav>
-
-    <%= yield %>
-  </body>
-</html>
