@@ -14,5 +14,6 @@ Rails.application.routes.draw do
 get "home/index" => "home#index"
 get "/about" => "home#about"
 get "/services" => "home#services"
+get "/agencies" => "agencies#show"
 
 end
