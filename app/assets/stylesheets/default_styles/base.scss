@@ -144,45 +144,63 @@ footer {
   width: 100%;
 }
 
-footer a {
+.footer-container {
+  width: 100%;
+}
+
+.footer-menu a {
   color: #000000;
 }
 
-footer a:hover {
+.footer-menu a:hover {
   color: #2F4F4F;
 }
 
-footer ul {
+.footer-menu ul {
   float: left;
   list-style: none;
   color: #000000;
   font-size: 14px;
-  padding-top: 30px;
+  padding-top: 15px;
+  padding-right: 40px;
 }
 
-footer ul li {
+.footer-menu ul li {
   text-align: left;
 }
 
-.contact {
+.contact-us h5 {
   float: left;
   font-size: 14px;
-  padding-top: 30px;
+  padding-left: 40px;
 }
 
-.faq {
-  padding-top: 30px;
+.contact-us p {
+  float: left;
+}
+
+.faqs-container {
   font-size: 14px;
-  float: right;
-  padding-left: 50px;
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 40px;
 }
 
-.social p {
-  float: right;
+.faqs-container a {
+  color: #000000;
 }
 
-.social img {
+.faqs-container a:hover {
+  color: #2F4F4F;
+}
+
+.faqs-container ul {
+  list-style: none;
+}
+
+.social-container {
   float: right;
-  width: 25px;
-  height: 25px;
+  padding-right: 10px;
+  font-size: 14px;
+  position: relative;
 }
