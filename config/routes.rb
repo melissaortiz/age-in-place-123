@@ -12,8 +12,8 @@ Rails.application.routes.draw do
 #root 'welcome#index'
 
 get "home/index" => "home#index"
-get "/about" => "home#about"
+get "/about" => "pages#about"
 get "/services" => "home#services"
-get "/agencies" => "agencies#show"
+
 
 end
