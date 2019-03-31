@@ -10,7 +10,7 @@ class AgenciesController < ApplicationController
   # GET /agencies/1
   # GET /agencies/1.json
   def show
-    
+    @agencies= Agency.all
   end
 
   # GET /agencies/new
@@ -37,7 +37,7 @@ class AgenciesController < ApplicationController
       end
     end
   end
-
+  
   # PATCH/PUT /agencies/1
   # PATCH/PUT /agencies/1.json
   def update

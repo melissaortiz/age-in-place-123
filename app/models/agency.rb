@@ -1,6 +1,6 @@
 class Agency < ApplicationRecord
   has_many :ratings
-end
+
 
 def self.search(term)
     if term
@@ -9,4 +9,5 @@ def self.search(term)
       all
     end
   end
-  
+
+end

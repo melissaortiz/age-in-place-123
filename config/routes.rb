@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   resources :agencies
-  root 'pages#home'
+  root 'startup#index'
 
   
 
