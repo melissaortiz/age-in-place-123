@@ -4,14 +4,12 @@ class AgenciesController < ApplicationController
   # GET /agencies
   # GET /agencies.json
   def index
-   @agencies = Agency.search(params[:term])
+   
   end
 
   # GET /agencies/1
   # GET /agencies/1.json
-  def show
-    @agencies= Agency.all
-  end
+  
 
   # GET /agencies/new
   def new
@@ -69,7 +67,7 @@ class AgenciesController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def task_params
+    def agency_params
       params.require(:agency).permit(:name, :street, :city, :state, :phone, :term)
     end
 end

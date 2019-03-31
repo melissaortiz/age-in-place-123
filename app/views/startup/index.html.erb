@@ -2,12 +2,54 @@
     <div class="container text-center">
       <h1>Age in Place 123</h1>
       <p class="lead">Grow where You're Planted</p>
-
     </div>
-    <form class="form-inline my-2 justify-content-center"> <!-- Search Bar -->
-    <input class="form-control mr-sm-2" type="search" placeholder="Search">
-    <button class="btn btn-default text-black" type="submit">Search</button>
-    </form>
+
+    
+    <%-# Start Agency search -%>
+    <div class="container">
+    <table class="centered">
+     <thead>
+      <tr>
+        <th colspan="3"></th>
+      </tr>
+     </thead>
+    <h1>Agencies</h1>
+      <p>Search agencies by city</p>
+    <table>
+    <thead>
+      <tr>
+        <th></th>
+        <%= form_tag(agencies_path, method: :get) do %>
+          <%= text_field_tag :term, params[:term] %>
+          <%= submit_tag 'Search' %>
+        <% end %>
+      </tr>
+    </thead>
+      <table>
+      <td>
+      </td>
+      </table>
+    </table>
+
+    </table>
+
+  <div class="centered results">
+        <section class="cards">
+          <% @agencies.each do |agency| %>
+        <article class="card">
+
+        <div class="card-content">
+            <h2><%= link_to agency.name.capitalize, agency_path(agency) %></h2>
+          </div>
+        </article>
+        <% end %>
+      </section>
+    </div>
+  </div>
+  <%-# End Agency search -%>
+
+
+
 </header>
 
   <section id="about">
