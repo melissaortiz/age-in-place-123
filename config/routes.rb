@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   resources :agencies
-  root 'pages#home'
+  root 'startup#index'
 
   
 
@@ -12,7 +12,8 @@ Rails.application.routes.draw do
 #root 'welcome#index'
 
 get "home/index" => "home#index"
-get "/about" => "home#about"
+get "/about" => "pages#about"
 get "/services" => "home#services"
+
 
 end

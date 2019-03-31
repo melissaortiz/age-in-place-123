@@ -1,3 +1,4 @@
+
 agencies = Agency.create([{state: 'AL',name: "ALABAMA DEPARTMENT OF PUBLIC HEALTH HOME CARE",street: "201 MONROE STREET, THE RSA TOWER,  SUITE 1200",city: "MONTGOMERY",phone: '3342065341',rating: 'nan'},
 {state: 'AL',name: "ALACARE HOME HEALTH & HOSPICE",street: "2970 LORNA ROAD",city: "BIRMINGHAM",phone: '2058242680',rating: '3.5'},
 {state: 'AL',name: "KINDRED AT HOME",street: "1239 RUCKER BLVD",city: "ENTERPRISE",phone: '3343470234',rating: '4.0'},

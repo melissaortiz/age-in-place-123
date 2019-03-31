@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
-
-<%= link_to 'Edit', edit_agency_path(@agency) %> |
-<%= link_to 'Back', agencies_path %>
+<h2><%= @agency.name %></h2><h4>Agency Rating: <%= @agency.rating %>
+<h3><%= @agency.phone %></h3>
+<p><%= @agency.street %></p>
+<p><%= @agency.city %>,<%= @agency.state %></p>
