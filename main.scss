@@ -1,0 +1,15 @@
+$font-family-sans-serif: "Helvetica", Roboto, sans-serif;
+
+$primary: $white;
+$success: $gray;
+$secondary: $black;
+
+$jumbotron-padding:                 2rem;
+$jumbotron-color:                   null;
+$jumbotron-bg:                      $gray-200;
+
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Helvetica", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:            $font-family-sans-serif;
+
+@import "node_modules/bootstrap/scss/bootstrap";

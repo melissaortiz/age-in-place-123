@@ -2380,7 +2380,7 @@ textarea.form-control {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: transparent;
+  background-color: #000000;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
@@ -6381,21 +6381,14 @@ a.close.disabled {
   vertical-align: text-top !important;
 }
 
-.bg-primary {
-  /* background-color: #007bff !important; */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("Dinner-Elderly.jpg");
-  height: auto;
-  opacity: 0.7;
-  z-index: -1;
+bg-primary {
+  background-color: #89cff0 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  /*background-color: #0062cc !important; */
+  background-color: #0062cc !important;
 }
 
 .bg-secondary {
