@@ -12,4 +12,12 @@ $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Helvetica", "S
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:            $font-family-sans-serif;
 
+$custom-select-indicator-padding:  1rem; // Extra padding to account for the presence of the background-image based indicator
+
+$headings-margin-bottom:      $spacer / 1;
+$headings-font-family:        Arial;
+$headings-font-weight:        500;
+$headings-line-height:        1.2;
+$headings-color:              #000000;
+
 @import "node_modules/bootstrap/scss/bootstrap";
