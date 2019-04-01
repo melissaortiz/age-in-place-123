@@ -14,7 +14,7 @@
       <tr>
         <th></th>
         <%= form_tag(agencies_path, method: :get) do %>
-          <%= text_field_tag :term, params[:term] %>
+          <%= text_field_tag :term.upcase, params[:term] %>
           <%= submit_tag 'Search' %>
         <% end %>
       </tr>
@@ -27,19 +27,7 @@
 
     </table>
 
-  <div class="centered results">
-        <section class="cards">
-          <% @agencies.each do |agency| %>
-        <article class="card">
-
-        <div class="card-content">
-            <h2><%= link_to agency.name.capitalize, agency_path(agency) %></h2>
-          </div>
-        </article>
-        <% end %>
-      </section>
-    </div>
-  </div>
+ 
   <%-# End Agency search -%>
 
   <section id="about">
