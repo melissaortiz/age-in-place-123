@@ -10,4 +10,4 @@ class PagesController < ApplicationController
   end
 end
 
-@agencies = agencies.all
+#@agencies = agencies.all
