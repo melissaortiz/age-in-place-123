@@ -20,7 +20,7 @@
       <tr>
         <th></th>
         <%= form_tag(agencies_path, method: :get) do %>
-          <%= text_field_tag :term.upcase, params[:term] %>
+          <%= text_field_tag :term.upcase, params[:term.upcase] %>
           <%= submit_tag 'Search' %>
         <% end %>
       </tr>
