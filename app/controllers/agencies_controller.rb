@@ -18,6 +18,14 @@ class AgenciesController < ApplicationController
     end
   end
 
+  def show
+    @agencies= Agency.all
+  end
+
+  def agency_params
+    params.require(:agency).permit(:name, :street, :city, :state, :phone, :term)
+  end
+  
   # GET /agencies/1
   # GET /agencies/1.json
   
@@ -78,8 +86,7 @@ class AgenciesController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def agency_params
-      params.require(:agency).permit(:name, :street, :city, :state, :phone, :term)
-    end
+
+    
 end
 
