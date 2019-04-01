@@ -10,5 +10,16 @@
 </article>
 <% end %>
 </section>
+  <h1>Search Results:</h1>
+  <h2><%= @label %></h2>
+  <section class="cards">
+    <% @agencies.each do |agency| %>
+      <article class="card">
+        <div class="card-content">
+          <h2><%= link_to agency.name, agency_path(agency) %> - Rating:  <%= agency.rating %></h2>
+        </div>
+      </article>
+    <% end %>
+  </section>
 </div>
-</div>
+
