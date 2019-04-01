@@ -4,7 +4,18 @@ class AgenciesController < ApplicationController
   # GET /agencies
   # GET /agencies.json
   def index
-   
+    if params[:term]
+      @label = "Displaying Agencies in " + params[:term]
+      if params[:term].include? ","
+        terms = params[:term].split(",")
+        @agencies = Agency.where(["city = ? and state = ?", terms[0].upcase.strip, terms[1].upcase.strip]).order(rating: :desc)
+      else
+        @agencies = Agency.where(["city = ?", params[:term].upcase]).order(rating: :desc)
+      end
+    else
+      @label = "Displaying All Agencies"
+      @agencies = Agency.all.order(rating: :desc)
+    end
   end
 
   # GET /agencies/1

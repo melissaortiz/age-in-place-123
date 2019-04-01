@@ -1,0 +1,12 @@
+<div class="centered results">
+  <h2><%= @label %></h2>
+  <section class="cards">
+    <% @agencies.each do |agency| %>
+      <article class="card">
+        <div class="card-content">
+          <h2 class="high"><%= link_to agency.name.capitalize, agency_path(agency) %> - Rating:  <%= agency.rating %></h2>
+        </div>
+      </article>
+    <% end %>
+  </section>
+</div>
