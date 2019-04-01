@@ -1,6 +1,6 @@
 <body>
     <%-# Start Agency search -%>
-    <div class="container">
+  <div class="agency-container">
     <table class="centered">
      <thead>
       <tr>
@@ -26,17 +26,17 @@
     </table>
 
     </table>
-
+</div>
  
   <%-# End Agency search -%>
 
-  <section id="about">
-    <div class="container">
+<section id="about">
+    <div class="about-container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>About</h2>
-          <h3 class="lead"><em>Ageinplace123 Mission:  To help babyboomers and their loved ones easily find quality resources to support the ability to age-in-place.</em></h3>
-          <p>Developed in 2019, ageinplace123 is built on the foundation of making resources for aging-in-place easy to find for babyboomers and their loved ones. Aging-in-place is defined as staying in the home or community of your choice as you age. Our mobile website provides easy to search home health care services sorted by location and quality ratings. We understand that our community thrives when its citizens are well taken care of and we strive to provide access to the research needed by seniors and their families. Ageinplace123 is available anywhere via a mobile website.
+          <h3><em>Ageinplace123 Mission:  To help babyboomers and their loved ones easily find quality resources to support the ability to age-in-place.</em></h3>
+          <p>Developed in 2019, Ageinplace123 is built on the foundation of making resources for aging-in-place easy to find for babyboomers and their loved ones. Aging-in-place is defined as staying in the home or community of your choice as you age. Our mobile website provides easy to search home health care services sorted by location and quality ratings. We understand that our community thrives when its citizens are well taken care of and we strive to provide access to the research needed by seniors and their families. Ageinplace123 is available anywhere via a mobile website.
             </p>
           </div>
       </div>
@@ -44,22 +44,30 @@
   </section>
 
   <section id="services" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
+    <div class="services-container">
+      <div class="services-row">
+          <div class="services-column" style: "width:50%;">
+            <div class="img-fluid">
+            <%= image_tag("elderly-couple.jpg") %>
+            </div>
+          </div>
+
+        <div class="services-column" style: "width:50%;">
+         <div class="services-text">
           <h2>Services</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+          <p>We help babyboomers and loved ones easily find quality resources to age-in-place. No need to visit multiple sites - we have it all here for you! Searchable across 50 states, Ageinplace123 is your one stop to find the best home health care services.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <section id="contact">
-    <div class="container">
+    <div class="contact-container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>We Want Your Feedback</h2>
-          <p class="lead">
+          <p>
             123 Main Street<br>
             New York, NY 10001<br>
             1-800-123-4567<br>
@@ -72,3 +80,21 @@
     </div>
   </section>
 </body>
+
+
+<div class="news-wrap">
+<div class="news">
+  <div class="news-content">
+    <form>
+      <label>Subscribe Now to Receive the Updates! <br></label>
+      <input type="email" placeholder="Enter Your Email">
+      <input type="submit" value="Subscribe">
+    </form>
+  </div>
+</div>
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js" async></script>
+</html>

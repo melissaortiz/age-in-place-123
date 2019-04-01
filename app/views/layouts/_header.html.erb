@@ -1,6 +1,9 @@
+<%-# Start Menu Options Nav Bar -%>
 <header>
-<div class="nav-logo">
-  <nav class="navbar-expand-lg navbar-light bg-light">
+  <div class="logo fixed-top">
+  <%= link_to image_tag("ageinplace123.png", :size => "100x100", :role => "logo") %>
+  </div>
+  <nav class="navbar-expand-lg navbar-fixed-top">
      <div class="navbar-header">
        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
@@ -24,22 +27,22 @@
       </ul>
    </div>
   </nav>
-</div>
 </header>
 
+<%-# End Menu Options Nav Bar -%>
+
+<%-# Start Top Main Section -%>
+
 <div class="top-main">
-  <div class="logo">
-    <%= link_to image_tag("ageinplace123.png", :size => "100x100", :role => "logo") %>
-  </div>
   <div class="background-img"></div>
-      <div class="top-message">
-      <div class="container text-center width: 100% height: auto">
-      <h1 class="">ageinplace123</h1>
-      <h3 class="text-center"><em>Live Where You're Planted</em></h3>
-                      <p>Welcome to ageinplace123, your one stop to find resources to support the ability for
-                      you and your loved ones to ‘live where you are planted.’ Utilize the menu to find home
-                      health care agencies sorted by location, ratings and services. Thank you for stopping by.
-                      We are here to help make your search easy and stress free!</p>
-      </div>  
-  </div>
+      <div class="container text-center">
+        <h1 class="top-title">ageinplace123</h1>
+          <h3 class="text-center"><em>Live Where You're Planted</em></h3>
+                          <p>Welcome to ageinplace123, your one stop to find resources to support the ability for
+                          you and your loved ones to ‘live where you are planted.’ Utilize the menu to find home
+                          health care agencies sorted by location, ratings and services. Thank you for stopping by.
+                          We are here to help make your search easy and stress free!</p> 
+      </div>
 </div>
+
+<%-# End Top Main Section -%>

@@ -19,7 +19,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+   <!-- <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="main.css">
 
     <!-- custom CSS -->
@@ -37,107 +37,7 @@
 
   <%= yield %>
 
-  
-  <!-- Footer -->
-  <footer class="page-footer bg-dark text-white">
-    <!-- Footer Links -->
-      <div class="container text-center text-md-left">
-    <!-- Grid row -->
-        <div class="row">
-    <!-- Grid column -->
-          <div class="col-md-4 mt-md-0 mt-3">
-    <!-- Content -->
-            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact Information</h5>
-            <p>123 Main Street,
-            <br>
-            New York, NY 10001
-            <br><br>
-            <a href="#">info@ageinplace123.com</a></p>
-        </div>
-    <!-- Grid column -->
-          <div class="col-md-4 mb-md-0 mb-3">
-    <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase pt-4"></h5>
-          <ul class="list-unstyled">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#services">Services</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-  
-          </div>
-          <!-- Grid column -->
-  
-          <hr class="clearfix w-100 d-md-none">
-  
-          <!-- Grid column -->
-          <div class="col-md-4 mb-md-0 mb-3">
-  
-            <!-- Links -->
-            <h5 class="font-weight-bold text-uppercase pt-4"></h5>
-  
-            <ul class="list-unstyled">
-              <li>
-                <a href="#faqs">FAQs</a>
-              </li>
-              <li>
-                <a href="#termsofuse">Terms of Use</a>
-              </li>
-              <li>
-                <a href="#privacypolicy">Privacy Policy</a>
-              </li>
-            </ul>
-  
-          </div>
-          <!-- Grid column -->
-  
-          <hr class="clearfix w-100 d-md-none">
-  
-          
-          <!-- Grid column -->
-  
-        </div>
-        <!-- Grid row -->
-  
-      </div>
-      <!-- Footer Links -->
-  
-      <!-- Social buttons -->
-      <ul class="list-unstyled list-inline text-center">
-        <li class="list-inline-item">
-          <a class="#btn-floating btn-fb mx-2">
-            <i class="fab fa-facebook-f"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="#btn-floating btn-tw mx-2">
-            <i class="fab fa-twitter"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="#btn-floating btn-gplus mx-2">
-            <i class="fab fa-instagram"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="#btn-floating btn-li mx-2">
-            <i class="fab fa-linkedin-in"> </i>
-          </a>
-        </li>
-      </ul>
-      <!-- Social buttons -->
-  
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">Copyright © AgeInPlace123 2019
-      </div>
-      <!-- Copyright -->
-  
-  </footer>
+  <%= render ("/layouts/footer") %>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
