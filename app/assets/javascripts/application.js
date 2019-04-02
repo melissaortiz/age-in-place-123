@@ -18,3 +18,6 @@
 //= require jquery
 //= require bootstrap.min
 
+$(':radio').change(function() {
+  console.log('New star rating: ' + this.value);
+});
