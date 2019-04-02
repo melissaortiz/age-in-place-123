@@ -1,8 +1,8 @@
-<div class="centered results">
-  <h1>Search Results:</h1>
-  <h2><%= @label %></h2>
-  <section class="cards">
-  <%= image_tag("Map.PNG", :width => "100%", :height => "auto", :display => "block") %>
+<div class="flex-container ">
+  <section class="cards agency-display">
+  <h1 class="results">Search Results:</h1>
+  <h2 ><%= @label %></h2>
+  <%= image_tag("Map.PNG", :width => "70%", :height => "auto", :display => "block") %>
     <% @agencies.each do |agency| %>
       <article class="card">
         <div class="card-content">
