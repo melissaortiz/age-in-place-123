@@ -30,12 +30,12 @@
     float: left;
     padding-left: 20px;
     padding-top: 10px;
-    font-size: 22px;
     line-height: 64px;
   }
 
-  .centered {
+  .d-flex p {
     float: center;
+    font-size: 22px;
   }
   
   /*
@@ -114,7 +114,7 @@
  
   /* Top Main CSS */
   .top-title {
-    padding: 0;
+    padding-top: 100px;
   }
 
   .top-main .background-img {
@@ -131,20 +131,23 @@
     z-index: -1;
   }
   
-  .top-message {
-    position: relative;
-    align-content: center;
+  .top-main {
     color: #000000;
   }
   
-  .top-message p {
-    font-size: 24px;
+  .top-main p {
+    font-size: 20px;
     font-style: 'Helvetica', sans-serif;
     font-weight: normal;
     color: #000000;
-    /* adding-top: 50px; */
+   /* padding-top: 50px; */
     text-align: center;
+    padding: 20px 0px;
   }
+
+.about-container {
+  padding: 250px 0px 10px 0px;
+}
 
 .services-column {
     float: left;
@@ -160,7 +163,12 @@
 @media screen and (max-width: 600px) {
   .services-column {
     width: 100%;
+    float: none;
   }
+}
+
+.services-container {
+  display: block;
 }
 
 .img-fluid {
@@ -171,7 +179,6 @@
 }
 
 .services-text {
-  float: right;
   padding-right: 20px;
   height: auto;
   width: 100%;
