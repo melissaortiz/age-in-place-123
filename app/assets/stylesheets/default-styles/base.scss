@@ -1,5 +1,4 @@
 
-
 * {
     margin: 0;
     box-sizing: border-box;
@@ -110,7 +109,7 @@
   .nav-item:hover a {
     color: #000080;
   }
-
+  
  
   /* Top Main CSS */
   .top-title {
@@ -180,6 +179,7 @@
 
 .services-text {
   padding-right: 20px;
+  padding-left: 10px;
   height: auto;
   width: 100%;
 }
@@ -270,6 +270,12 @@
   }
   /* End footer styling */
 
+  /*Subscribe Now styling */
+
+  .news-content {
+    text-align: right;
+    padding: 10px;
+  }
 
 /* Begin 'existing rating' code: */
 
@@ -378,3 +384,5 @@
 }
 
 /* end of 'enter user rating' code */
+
+
