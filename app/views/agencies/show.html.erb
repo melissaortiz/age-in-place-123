@@ -1,9 +1,62 @@
 <section class="cards">
       <div>
     <h2 class="results"><%= @agency.name %></h2>
-    <h4 class="results1">Agency Rating: <%= @agency.rating %>
+    <h4 class="results1">Agency Rating: <div class="star-ratings-css">
+  <div class="star-ratings-css-top" style="width: <%= @agency.rating * 20 %>%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+  <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div></div></h4>
     <h3 class="results1"><%= @agency.phone %></h3>
     <p class="results1"><%= @agency.street %></p>
     <p class="results1"><%= @agency.city %>,<%= @agency.state %></p>
+
+
+<!-- beginning of 'enter rating' html -->
+<h4 class="results1">
+<form class="rating">
+  <label>
+    <input type="radio" name="stars" value="1" />
+    <span class="icon">★</span>
+  </label>
+  <label>
+    <input type="radio" name="stars" value="2" />
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+  </label>
+  <label>
+    <input type="radio" name="stars" value="3" />
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+    <span class="icon">★</span>   
+  </label>
+  <label>
+    <input type="radio" name="stars" value="4" />
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+  </label>
+  <label>
+    <input type="radio" name="stars" value="5" />
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+    <span class="icon">★</span>
+  </label>
+</form>
+<p> </p>
+        <p> </p>
+        <p> </p>
+        <p> 
+        <input type="submit" name="commit" value="Submit Your Rating!" data-disable-with="Search" /></p>
+        <p> </p>
+        <p> </p>
+
+</h4>
+
+
+<!-- end of 'enter rating' html -->
+
     </div>
 </section>
+
+
